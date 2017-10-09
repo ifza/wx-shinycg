@@ -1,0 +1,18 @@
+<import src="../../../../wxParse/wxParse.wxml" />
+<view wx:if="{{details}}" class="body p10">
+  <view class="description">
+    <text class="title">{{details.title}}</text>
+    <text class="entitle">{{details.subtitle}}</text>
+    <text>\n</text>
+    <text class="info">{{details.info}}</text>
+  </view> 
+  <view style="text-align: center;">
+    <image style="width:50%;" mode="widthFix" src="https://www.shinycg.com/Public/Home/img/column/products/display.png"></image>
+  </view>
+  <view class="body p10">
+    <template is="wxParse" data="{{wxParseData:article.nodes}}"/>
+  </view>
+</view>
+<view wx:else>
+暂无数据
+</view>

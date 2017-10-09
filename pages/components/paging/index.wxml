@@ -1,0 +1,10 @@
+<template name="paging">
+  <scroll-view wx:if="{{list.length > 0}}" scroll-y catchscrolltolower="{{loadMore}}" style="height:60px;">
+    <block wx:for="{{list}}">
+      <view>{{item.title}}</view>
+    </block>
+  </scroll-view>
+  <view wx:else>
+    <text>无数据</text>
+  </view>
+</template>

@@ -1,0 +1,14 @@
+<!-- 需求  -->
+<template name="xuqiu">
+  <scroll-view scroll-y="true" style="height:100%;">
+    <view class="body page-xuqiu">
+      <text>\n</text>
+      <text class="h1">24小时需求服务</text>
+      <text class="p text-center">如果您有服务需求可以给我们留下您信息</text>
+     
+       <navigator  class="application-item" url="/pages/form/producing/index" >项目需求申请</navigator>
+       <navigator  class="application-item"  url="/pages/form/report/index" >诊断咨询报告申请</navigator>
+    </view>
+ 
+  </scroll-view>
+</template>

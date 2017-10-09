@@ -1,0 +1,3 @@
+<view class="tab-view">
+    <map id="map" latitude="30.605220" longitude="114.290260" scale="16" markers="{{markers}}" bindcontroltap="controltap" bindmarkertap="markertap" bindregionchange="regionchange" show-location style="width: 100%; height: {{MapHeight}}px;" bindtap="click" />
+</view>

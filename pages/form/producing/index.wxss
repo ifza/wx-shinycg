@@ -1,0 +1,3 @@
+/* pages/form/producing/index.wxss */
+.checkbox-group{}
+.checkbox-group label{padding:9px;display: inline-block;}

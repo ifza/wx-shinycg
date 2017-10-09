@@ -1,0 +1,18 @@
+<!-- 联系我们 -->
+<template name="we">
+  <view class="page-we">
+    <view class="company">武汉炫幕网络科技有限公司</view>
+    <view><text>\n</text></view>
+    <view class="time">8：30 AM- 17：30PM</view>
+    <view class="tel">+027 - 82213410</view>
+    <view><text>\n</text></view>
+    <view class="address">地址：武汉市江岸区澳门路232号金冠大厦16楼</view>
+  </view>
+  
+  <view class="map" bindtap='MapClick'>
+   
+      <image mode="widthFix" style="width:100%;" src="../../images/map.jpg" />
+      <text>点击查看详细</text>
+
+  </view>
+</template>

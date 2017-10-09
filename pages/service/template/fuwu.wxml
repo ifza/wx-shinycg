@@ -1,0 +1,47 @@
+<!-- 服务 -->
+<template name="fuwu">
+  <scroll-view scroll-y="true" style="height:100%;">
+    <view class="body p8">
+      <text>\n</text>
+      <text class="h1">炫幕服务</text>
+      <text class="p text-center">优质的服务是我们一贯的追求</text>
+      <text>\n\n</text>
+      <text class="p text-center"><text class="iconfont icon-weibaozhuang ts-30"></text></text>
+      <text class="h2">微包装</text>
+      <text class="p text-center">全面推动中小型企业O2O的进程。</text>
+      <text class="p text-center">LOGO、宣传册、官网、微信平台、影视宣传片</text>
+      <text>\n</text>
+      <view class="hr"></view>
+      <text>\n</text>
+      <text class="p text-center"><text class="iconfont icon-quanwangzhenghetuiguang ts-30"></text></text>
+      <text class="h2">全网整合推广</text>
+      <text class="p text-center">由跨屏技术制作全网络（PC及移动端）平台，实现了数据库的统一，内容更新的统一，SEO优化的统一，从而真正实现了“步调一致”的全网整个传播</text>
+      <text>\n</text>
+      <view class="hr"></view>
+      <text>\n</text>
+      <text class="p text-center"><text class="iconfont icon-yingshizhizuo ts-30"></text></text>
+      <text class="h2">影视制作</text>
+      <text class="p text-center">在项目包装的制高点上，我们更加注重创意，营造吸引力。</text>
+      <text class="p text-center">三维动画、实拍广告</text>
+      <text>\n</text>
+      <view class="hr"></view>
+      <text>\n</text>
+      <text class="p text-center"><text class="iconfont icon-quanwangdianshangpingtai ts-30"></text></text>
+      <text class="h2">全网电商平台</text>
+      <text class="p text-center">打造互联网时期“无处不在“的O+O+M全渠道营销平台。</text>
+      <text class="p text-center">PC端数据库式官网、移动端快销型微信平台、手机端会员式APP</text>
+      <text>\n</text>
+      <view class="hr"></view>
+      <text>\n</text>
+      <text class="p text-center"><text class="iconfont icon-duomeitizhanting ts-30"></text></text>
+      <text class="h2">多媒体展厅</text>
+      <text class="p text-center">改变传统展厅信息传播被动式，实现观众由被动变主动的全方位体验式信息传播、互动环幕、电子沙盘、全息投影、光影互动、虚拟成像、声控系统、5D体感、多点触摸屏、电子书</text>
+      <text>\n</text>
+      <view class="hr"></view>
+      <text>\n</text>
+      <text class="p text-center"><text class="iconfont icon-zhongchoucehua ts-30"></text></text>
+      <text class="h2">众筹策划</text>
+      <text class="p text-center">互联网金融——众筹方案策划，设计与推广,在互联网时代，有聚众的消费就有众筹的基础，产品预售众筹，经营权众筹，股权众筹都是把消费转化为投资的“融资（金）筹资（源）”方法</text>
+    </view>
+  </scroll-view>
+</template>

@@ -1,0 +1,11 @@
+<!-- 服务流程 -->
+<template name="liucheng">
+<scroll-view scroll-y="true" style="height:100%;">
+  <view class="body">
+    <text>\n</text>    
+    <text class="p p8">我们拥有动画师，策划师，设计师，客服与客户协同创新的方法，共同完成市场所需要的产品。</text>
+    <text>\n</text>
+    <image style="width:100%;" src="http://www.shinycg.com/Public/Home/img/column/service/process.jpg" mode="widthFix" />
+  </view>
+</scroll-view>
+</template>

@@ -1,0 +1,19 @@
+/* pages/form/report/index.wxss */
+.page__tabs{
+  
+  display: flex;
+  background-color: #fff;
+}
+.page__tabs view{  flex:1 1;
+text-align: center;
+height: 40px;
+line-height: 40px;
+border-top: 1px solid #ddd;
+}
+.page__tabs view.active{
+  /* border-top-color: #88a7ec; */
+  background-color: #88a7ec;
+  color: #fff;
+}
+
+

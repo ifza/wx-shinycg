@@ -1,0 +1,16 @@
+
+<view wx:if="{{details}}" class="body p10">
+  <view class="description">
+    <text class="title">{{details.title}}</text>
+    <text class="entitle">{{details.subtitle}}</text>
+    <text>\n</text>
+    <text class="info">{{details.info}}</text>
+  </view> 
+  <text>\n</text>
+  <view class="video">
+    <video style="width:100%;" autoplay loop src="https://www.shinycg.com/Public/{{details.videourl}}" poster="https://www.shinycg.com{{details.smallpic}}"></video>
+  </view>
+</view>
+<view wx:else>
+暂无数据
+</view>

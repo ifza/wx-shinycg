@@ -1,0 +1,24 @@
+<import src="temp/video.wxml"/>
+<import src="temp/album.wxml"/>
+<view class="container">
+  <view class="tabs">
+    <view class="tab {{currentTab==0?'active':''}}" data-index="0" bindtap="swichNav">网站制作</view>
+    <view class="tab {{currentTab==1?'active':''}}" data-index="1" bindtap="swichNav">影视宣传</view>
+    <view class="tab {{currentTab==2?'active':''}}" data-index="2" bindtap="swichNav">多媒体交互</view>
+    <view class="tab {{currentTab==3?'active':''}}" data-index="3" bindtap="swichNav">其他</view>
+  </view>
+  <swiper style="height:{{ViewHeight}}px" circular="true" bindchange="swichTab" current="{{currentTab}}" >
+    <swiper-item>
+      <template is="album" data="{{...$Paging.mlist1}}"></template>  
+    </swiper-item>
+    <swiper-item>  
+      <template is="video" data="{{...$Paging.mlist2}}"></template>   
+    </swiper-item>
+    <swiper-item>
+      <template is="album" data="{{...$Paging.mlist3}}"></template>  
+    </swiper-item>
+    <swiper-item>
+      <template is="album" data="{{...$Paging.mlist4}}"></template>
+    </swiper-item>
+  </swiper>
+</view>

@@ -1,0 +1,8 @@
+<!--index.wxml-->
+<import src="../../../wxParse/wxParse.wxml" />
+<view class="body p12">
+<template is="wxParse" data="{{wxParseData:article.nodes}}"/>
+</view>
+
+
+

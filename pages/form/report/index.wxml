@@ -1,0 +1,72 @@
+<!--pages/service/xuqiu/index.wxml-->
+<view class="page">
+    <view class="page__tabs">       
+        <view bindtap="tabChange" class="{{reportType==0?'active':''}}" data-index="0">网站诊断报告</view>
+        <view bindtap="tabChange" class="{{reportType==1?'active':''}}"  data-index="1">网络搭建咨询报告</view>     
+    </view>
+    <view class="page__bd">
+        <view class="weui-toptips weui-toptips_warn" wx:if="{{showTopTips}}">错误提示</view>
+
+        <form bindsubmit="formSubmit" bindreset="formReset">
+            <view class="weui-cells weui-cells_after-title">
+                <view class="weui-cell weui-cell_input">
+                    <view class="weui-cell__bd">
+                        <input name="companyname" class="weui-input" placeholder="企业全称" maxlength='20' />
+                    </view>
+                </view>
+                <view class="weui-cell weui-cell_input">
+                    <view class="weui-cell__bd">
+                        <input name="username" class="weui-input" placeholder="联系人"  maxlength='20'/>
+                    </view>
+                </view>
+                <view class="weui-cell weui-cell_input">
+                    <view class="weui-cell__bd">
+                        <input name="usertelephone" class="weui-input" placeholder="联系电话"  maxlength='11'/>
+                    </view>
+                </view>
+                <block wx:if="{{reportType == 0}}">
+                    <view class="weui-cell weui-cell_input">
+                        <view class="weui-cell__bd">
+                            <input name="website" class="weui-input" placeholder="诊断网址(http://)"  maxlength='255' />
+                        </view>
+                    </view>
+                    <view class="weui-cell weui-cell_input">
+                        <view class="weui-cell__bd">
+                            <input name="wechat" class="weui-input" placeholder="企业公众号"  />
+                        </view>
+                    </view>
+                    <view class="weui-cell weui-cell_input">
+                        <view class="weui-cell__bd">
+                            <input name="app" class="weui-input" placeholder="App" />
+                        </view>
+                    </view>
+                </block>
+                <block wx:if="{{reportType == 1}}">
+                    <view class="weui-cell weui-cell_input">
+                        <view class="weui-cell__bd">
+                            <input name="product" class="weui-input" placeholder="产品及服务"  maxlength='20' />
+                        </view>
+                    </view>
+                    <view class="weui-cell weui-cell_input">
+                        <view class="weui-cell__bd">
+                            <input name="target" class="weui-input" placeholder="目标客户" />
+                        </view>
+                    </view>
+                </block>
+
+                <view class="weui-cells weui-cells_after-title">
+                    <view class="weui-cell">
+                        <view class="weui-cell__bd">
+                            <textarea name="remarks" class="weui-textarea" placeholder="备注:请简要说明您的需求!我们将在48小时向您提供专业诊断" style="height: 3.3em" />
+                            <view class="weui-textarea-counter">0/200</view>
+                        </view>
+                    </view>
+                </view>
+                <view class="weui-btn-area">
+                    <button class="weui-btn" style="background-color:#88a7ec;"  type="primary" formType="submit">提交</button>
+                    <button class="weui-btn" style="background-color:#e64340;" type="primary" formType="reset">重置</button>
+                </view>
+            </view>
+        </form>
+    </view>
+</view>

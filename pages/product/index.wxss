@@ -1,0 +1,10 @@
+/* index.wxss */
+
+@import '../common/global.wxss';
+.nodata{
+  margin-top:50px;
+  padding:20px;
+  box-sizing: border-box;
+  text-align: center;
+}
+.nodata text{ margin-left:20px; font-size: 18px; color:#88a7ec}

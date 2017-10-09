@@ -1,0 +1,26 @@
+<import src="template/company.wxml" />
+<import src="template/team.wxml" />
+<import src="template/unit.wxml" />
+<import src="template/we.wxml" />
+<view class="container">
+  <view class="tabs">
+    <view class="tab {{currentTab==0?'active':''}}" data-index="0" bindtap="swichNav">炫幕简介</view>
+    <view class="tab {{currentTab==1?'active':''}}" data-index="1" bindtap="swichNav">炫幕团队</view>
+    <view class="tab {{currentTab==2?'active':''}}" data-index="2" bindtap="swichNav">合作单位</view>
+    <view class="tab {{currentTab==3?'active':''}}" data-index="3" bindtap="swichNav">联系我们</view>
+  </view>
+  <swiper style="height:{{ViewHeight}}px;" bindchange="swichTab" current="{{currentTab}}">
+    <swiper-item>
+      <template is="company"></template>
+    </swiper-item>
+    <swiper-item>
+      <template is="team"></template>
+    </swiper-item>
+    <swiper-item>
+      <template is="unit"></template>
+    </swiper-item>
+    <swiper-item>
+      <template is="we"></template>  
+    </swiper-item>
+  </swiper>
+</view>

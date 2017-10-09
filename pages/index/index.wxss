@@ -1,0 +1,46 @@
+/**index.wxss**/
+@import '../common/global.wxss';
+.banner{height: 130px;}
+.banner .banner-item{
+  height: 100%;
+  background-position:center center;
+  background-size:cover;
+  background-repeat: no-repeat;
+}
+
+.myimg{
+  width: 100%;
+
+}
+.News{
+  height: 30px;
+  overflow: hidden;
+  display: flex;  
+}
+.News .NewsSwiper{ 
+  height: 30px;
+ width: 200px;
+ flex-grow: 1;
+}
+.News .NewsSwiper swiper{ height: 30px;}
+.News .NewsSwiper .NewsSwiper-Item{ height: 30px;}
+.News .NewsSwiper .NewsSwiper-Item text{ height: 30px; line-height: 30px;
+  text-align: left;
+  
+}
+.News .NewsMore text{
+  height: 30px;
+  line-height: 30px;
+  width: 80px;
+}
+
+.Column{text-align: center; height: 200px; line-height: 200px;
+
+background-image: url(https://www.shinycg.com/Public/Home/img/index/nav1.jpg);
+background-position: center center;
+background-repeat: no-repeat;
+background-size:cover;
+}
+.Column text{ color:#333; font-size: 26px;}
+.Column text text{ font-weight: bold;}
+

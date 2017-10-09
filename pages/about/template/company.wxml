@@ -1,0 +1,20 @@
+<!-- 公司简介 -->
+<template name="company">
+  <scroll-view scroll-y="true" style="height:100%;">
+    <view class="body p8 page-company">
+      <text>\n</text>
+      <view class="company-logo" style="background-image:url(https://www.shinycg.com/Public/Home/img/column/introduce/shiny1.jpg)"></view>
+      <text>\n</text>
+      <text class="p">1995以来，炫幕数码（Shiny digital）运用数字化技术生产三维动画，交互设计和视觉效果的网站。</text>
+      <text>\n</text>
+      <view class="company-logo" style="background-image:url(https://www.shinycg.com/Public/Home/img/column/introduce/shiny2.jpg)"></view>
+      <text>\n</text>
+      <text class="p">2005，炫幕（ShinyCG）由上海总部成立分公司，武汉。我们拥有动画师，策划师，设计师，客服与客户协同创新的方法，共同完成市场所需要的产品。</text>
+      <text>\n</text>
+      <view class="company-logo" style="background-image:url(https://www.shinycg.com/Public/Home/img/column/introduce/shiny3.jpg)"></view>
+      <text>\n</text>
+      <text class="p">今天，炫幕（Shiny）已发展成亚太地区最具影响力的二维交互、三维影像创意制作机构之一，旗下专业人员逾百人。我们用现代数字技术与Flash交互的结合，辅以产品线上与线下的配合及销售。从网络策划，网络营销至项目售后的网络服务提供全面的解决方案，全力搭建高新数字化互动营销平台，实现科技营销。</text>
+      <text>\n</text>
+    </view>
+  </scroll-view>
+</template>

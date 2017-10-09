@@ -1,0 +1,19 @@
+<template name="footer">
+<view class="Footer">
+  <view class="MediaList">
+    <a href="javascript:;" id="wxBtn" class="iconfont"></a>
+    <a href="http://weibo.com/u/3495617672" target="_blank" class="iconfont"></a>
+    <a href="http://wpa.qq.com/msgrd?v=3&amp;uin=2214727984&amp;site=qq&amp;menu=yes" target="_blank" class="iconfont"></a>
+    <a href="Mailto:shinycg@163.com?CC=shinycg@163.com&amp;BCC=shinycg@163.com" class="iconfont"></a>
+  </view>
+  <view class="Address">
+    <text>武汉炫幕网络科技有限公司</text>
+    <text>ADD:湖北武汉市江岸区澳门路232号金冠大厦16楼</text>
+    <text>TEL:(027)-82213410</text>
+    <text>TEL:(027)-82751213</text>
+    <text>E-MAIL:shinycg@163.com</text>
+  </view>
+  <view class="Footer-Logo"></view>
+  <text class="Copy">Copyright © 2017  ShinyCG. All rights reserved. 鄂ICP 08101392号-5</text>
+</view>
+</template>

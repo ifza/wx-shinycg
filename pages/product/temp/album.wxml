@@ -1,0 +1,19 @@
+<template name="album">
+  <scroll-view wx:if="{{list.length > 0}}" scroll-y catchscrolltolower="{{loadMore}}" style="height:500px;">
+    <block wx:for="{{list}}">
+      <navigator url="/pages/product/details/album/index?id={{item.id}}">
+        <view class="Product">
+          <view class="Pic" style="background-image: url(https://www.shinycg.com{{item.smallpic}});"></view>
+          <view class="Title">
+            {{item.title}}
+          </view>
+        </view>
+      </navigator>
+    </block>
+  </scroll-view>
+  <view wx:else>
+    <view class="nodata">
+      <icon type="info" size="80" color="#88a7ec"/><text>暂无数据</text>
+    </view>
+  </view>
+</template>

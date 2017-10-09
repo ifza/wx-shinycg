@@ -1,0 +1,15 @@
+<template name="paging">
+  <scroll-view wx:if="{{list.length > 0}}" scroll-y catchscrolltolower="{{loadMore}}" style="height:1000%;">
+    <block wx:for="{{list}}" wx:key="value">    
+      <navigator url="/pages/news/details/index?id={{item.id}}" class="weui-media-box weui-media-box_appmsg" hover-class="weui-cell_active">
+        <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
+          <image class="weui-media-box__thumb" src="http://www.shinycg.com{{item.smallpic}}" />
+        </view>
+        <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+          <view class="weui-media-box__title">{{item.title}}</view>
+          <view class="weui-media-box__desc">{{item.subtitle}}</view>
+        </view>
+      </navigator>
+    </block>
+  </scroll-view>
+</template>

@@ -1,0 +1,15 @@
+<!-- 炫幕团队 -->
+<template name="team">
+  <scroll-view scroll-y="true" style="height:100%;">        
+  <view class="body">
+    <view class="p8">
+      <text>\n</text>
+      <text class="p">我们拥有动画师，策划师，设计师，客服与客户协同创新的方法，共同完成市场所需要的产品。</text>
+      <text>\n</text>
+    </view>    
+    <block wx:for="{{[1,2,3,4,5]}}" wx:key="value">
+      <image style="width:100%;" src="https://www.shinycg.com/Public/Home/img/column/introduce/picture{{item}}.jpg" mode="widthFix" />
+    </block>
+  </view>
+  </scroll-view>
+</template>

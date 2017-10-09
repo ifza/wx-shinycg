@@ -1,0 +1,22 @@
+<import src="template/liucheng.wxml" />
+<import src="template/fuwu.wxml" />
+<import src="template/xuqiu.wxml" />
+
+<view class="container">
+    <view class="tabs">
+      <view class="tab {{currentTab==0?'active':''}}" data-index="0" bindtap="swichNav">炫幕服务</view>
+      <view class="tab {{currentTab==1?'active':''}}" data-index="1" bindtap="swichNav">服务流程</view>
+      <view class="tab {{currentTab==2?'active':''}}" data-index="2" bindtap="swichNav">需求服务</view>
+    </view>
+    <swiper style="height:{{ViewHeight}}px" bindchange="swichTab" current="{{currentTab}}">
+      <swiper-item>
+        <template is="fuwu"></template>
+      </swiper-item>
+      <swiper-item>
+        <template is="liucheng"></template>
+      </swiper-item>
+      <swiper-item>
+          <template is="xuqiu"></template>
+      </swiper-item>
+    </swiper>
+</view>

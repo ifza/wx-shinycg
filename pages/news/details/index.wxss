@@ -1,0 +1,3 @@
+/* index.wxss */
+
+.single{ display: block; overflow: hidden; padding:15px;}

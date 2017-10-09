@@ -1,0 +1,22 @@
+@import '../../../common/global.wxss';
+view{display: block;}
+.description{
+  background-color: #88a7ec;
+  padding:20px;
+}
+.description .title,.description .entitle,.description .info{
+  color:#fff;
+  display: block;
+  text-align: center;
+  line-height: 30px;
+}
+.description .title{ font-size: 18px;
+
+}
+.description .entitle{ font-size: 12px;}
+.description .info{
+font-size: 14px;
+text-align: left;
+height: auto;
+
+}

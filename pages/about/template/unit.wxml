@@ -1,0 +1,17 @@
+<!-- 合作单位 -->
+<template name="unit">
+  <scroll-view scroll-y="true" style="height:100%;">
+    <view class="body p8 page-unit">      
+      <text>\n</text>
+      <text class="p">感谢与我们合作的客户</text>
+      <text>\n</text>
+      <view class="coop-unit flex">
+        <block wx:for="{{[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]}}"  wx:key="value">
+        <view class="flex-item">
+        <image style="width:100%;"  src="https://www.shinycg.com/Public/Home/img/column/introduce/company{{item}}.jpg" mode="widthFix" />
+        </view>
+        </block>
+      </view>
+    </view>
+  </scroll-view>
+</template>

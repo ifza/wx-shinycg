@@ -1,0 +1,17 @@
+<template name="video">
+<scroll-view wx:if="{{list.length > 0}}" scroll-y catchscrolltolower="{{loadMore}}" style="height:500px;">
+    <block wx:for="{{list}}"> 
+  <navigator url="/pages/product/details/video/index?id={{item.id}}">
+    <view class="Product">
+        <view class="Pic" style="background-image: url(https://www.shinycg.com{{item.smallpic}});"></view>
+        <view class="Title">
+          {{item.title}}
+        </view>
+      </view>      
+      </navigator>
+    </block>
+</scroll-view>
+<view wx:else>
+  <text>无数据</text>
+</view>
+</template>

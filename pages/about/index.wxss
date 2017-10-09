@@ -1,0 +1,34 @@
+@import '../common/global.wxss';
+/* news.wxss */
+.page-company .company-logo{
+  height: 150px;
+  background-position: center center;
+  background-repeat: no-repeat;  
+}
+.page-unit .flex{  display: flex; flex-wrap: wrap; }
+.page-unit .flex .flex-item{ width: 33.3333%; padding:15px 6px; box-sizing: border-box;}
+.page-we{
+  padding:15px;
+  text-align: right;
+}
+.page-we .time{
+  color:#333;
+  font-size: 28rpx; 
+}
+.page-we .tel{
+  color:#333;
+  font-size: 60rpx; 
+  font-weight: bold;
+}
+
+.page-we .company{
+  color:#333;
+  font-size: 30rpx; 
+  font-weight: bold;
+}
+.page-we .address{
+  color:#333;
+  font-size:32rpx; 
+}
+ 
+.map text{ text-align: right; display: block; width: 100%; color:#88a7ec; font-size: 14px; line-height: 20px;padding:0px 10px; box-sizing:border-box;}

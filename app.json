@@ -1,0 +1,56 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/about/index",
+    "pages/service/index",
+    "pages/product/index",
+    "pages/news/index",
+    "pages/product/details/index",
+    "pages/news/details/index",
+    "pages/product/details/video/index",
+    "pages/product/details/album/index",
+    "pages/form/demand/index",
+    "pages/map/index",
+    "pages/form/report/index",
+    "pages/form/producing/index"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "炫幕网络科技",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#8a8a8a",
+    "selectedColor": "#88a7ec",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "iconPath": "images/home.png",
+        "selectedIconPath": "images/home-hover.png",
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "iconPath": "images/aboutus.png",
+        "selectedIconPath": "images/aboutus-hover.png",
+        "pagePath": "pages/about/index",
+        "text": "关于我们"
+      },
+      {
+        "iconPath": "images/service.png",
+        "selectedIconPath": "images/service-hover.png",
+        "pagePath": "pages/service/index",
+        "text": "炫幕服务"
+      },
+      {
+        "iconPath": "images/product.png",
+        "selectedIconPath": "images/product-hover.png",
+        "pagePath": "pages/product/index",
+        "text": "炫幕产品"
+      }
+    ]
+  },
+  "debug": true
+}
