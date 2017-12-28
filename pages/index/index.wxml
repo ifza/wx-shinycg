@@ -1,43 +1,47 @@
 <view class="container">
-    <swiper class="banner" autoplay="{BannerSwiper.autoplay}}" indicator-dots="{BannerSwiper.indicatorDots}}" circular="{BannerSwiper.circular}}">    
-        <block wx:for="{{BannerSwiper.data}}" wx:key="value">
-            <swiper-item>
-                <view class="banner-item" style="background-image:url({{item.image}})"></view>
-            </swiper-item>
+  <swiper class="banner" autoplay="{BannerSwiper.autoplay}}" indicator-dots="{BannerSwiper.indicatorDots}}" circular="{BannerSwiper.circular}}">
+    <block wx:for="{{BannerSwiper.data}}" wx:key="value">
+      <swiper-item>
+        <view class="banner-item" style="background-image:url({{item.image}})"></view>
+      </swiper-item>
+    </block>
+  </swiper>
+  <view wx:if="{{NewsSwiper.data.length > 0}}" class="News p8">
+    <view class="NewsSwiper">
+      <swiper vertical="{{NewsSwiper.vertical}}" autoplay="{{NewsSwiper.autoplay}}" circular="{{NewsSwiper.circular}}">
+        <block wx:for="{{NewsSwiper.data}}" wx:key="value">
+          <swiper-item class="NewsSwiper-Item">
+            <navigator url="/pages/news/details/index?id={{item.id}}">
+              <text>{{item.title}}</text>
+            </navigator>
+          </swiper-item>
         </block>
-    </swiper>
-    <view wx:if="{{NewsSwiper.data.length > 0}}" class="News p8">
-        <view class="NewsSwiper">
-            <swiper vertical="{{NewsSwiper.vertical}}" autoplay="{{NewsSwiper.autoplay}}" circular="{{NewsSwiper.circular}}">
-                <block wx:for="{{NewsSwiper.data}}" wx:key="value">
-                    <swiper-item class="NewsSwiper-Item">
-                        <navigator url="/pages/news/details/index?id={{item.id}}"><text>{{item.title}}</text></navigator>
-                    </swiper-item>
-                </block>
-            </swiper>
-        </view>
-        <view class="NewsMore">
-            <navigator url="/pages/news/index"><text>MORE</text></navigator>
-        </view>
+      </swiper>
     </view>
-    <navigator url="/pages/about/index" open-type="switchTab">
-        <view class="Column">
-            <text>关于<text>炫幕</text></text>
-        </view>
-    </navigator>
-    <navigator url="/pages/product/index" open-type="switchTab">
-        <view class="Column">
-            <text>网络平台的<text>搭建/运营</text></text>
-        </view>
-    </navigator>
-    <navigator url="/pages/product/index?tab=1" open-type="switchTab">
-        <view class="Column">
-            <text>影视<text>创意/制作</text></text>
-        </view>
-    </navigator>
-    <navigator url="/pages/service/index?tab=2" open-type="switchTab">
-        <view class="Column">
-            <text>24小时<text>需求申请</text></text>
-        </view>
-    </navigator>
+    <view class="NewsMore">
+      <navigator url="/pages/news/index">
+        <text>MORE</text>
+      </navigator>
+    </view>
+  </view>  
+  <navigator url="/pages/about/index" open-type="switchTab">
+    <view class="Column">
+      <text>关于<text>炫幕</text></text>
+    </view>
+  </navigator>
+  <navigator url="/pages/product/index" open-type="switchTab">
+    <view class="Column">
+      <text>网络平台的<text>搭建/运营</text></text>
+    </view>
+  </navigator>
+  <navigator url="/pages/product/index?tab=1" open-type="switchTab">
+    <view class="Column">
+      <text>影视<text>创意/制作</text></text>
+    </view>
+  </navigator>
+  <navigator url="/pages/service/index?tab=2" open-type="switchTab">
+    <view class="Column">
+      <text>24小时<text>需求申请</text></text>
+    </view>
+  </navigator>
 </view>
